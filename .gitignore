@@ -1,0 +1,51 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Node.js (if using npm tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build outputs
+dist/
+build/
+*.min.js
+*.min.css
+
+# OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Local development
+.local/
+local/

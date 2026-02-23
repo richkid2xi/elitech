@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EliTech CreaTives is a student-led product studio building purposeful digital products from idea to impact." />
+    <meta name="keywords" content="Elitech Creatives, product studio, digital products, student-led, startup, UX, UI, software" />
+    <meta name="author" content="EliTech CreaTives" />
+    <meta property="og:title" content="EliTech CreaTives" />
+    <meta property="og:description" content="Student-led product studio building purposeful digital products from idea to impact." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <link rel="icon" type="image/png" href="assets/EliTech.png" />
+    <title>Elitech Creatives</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading">
+    <div class="page-loader" id="page-loader">
+      <div class="loader-content">
+        <div class="loader-spinner">
+          <svg class="spinner-svg" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="gradientStroke1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f6a200;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#5f78d6;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#f6a200;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="gradientStroke2" x1="100%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" style="stop-color:#5f78d6;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#8aa1ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#5f78d6;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="40" fill="none" stroke="url(#gradientStroke1)" stroke-width="4" stroke-linecap="round" stroke-dasharray="20 251" class="loader-arc" id="loader-arc"/>
+          </svg>
+        </div>
+        <p class="loader-saying" id="loader-saying">Building the future, one byte at a time...</p>
+        <div class="loader-progress-container">
+          <div class="loader-progress-bar" id="loader-progress-bar"></div>
+        </div>
+        <button class="loader-skip" id="loader-skip">Skip</button>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#">
+          <span class="brand-text">EliTech CreaTives</span>
+          <span class="brand-dot" aria-hidden="true"></span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#process">Process</a>
+          <a href="#team">Team</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="cta" href="#careers">Join Journey</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+        <nav class="mobile-nav">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#process">Process</a>
+          <a href="#team">Team</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <a class="btn primary" href="#careers">Join Journey</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title" id="top">
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="hero-kicker">Student-led product studio</p>
+            <h1 id="hero-title">
+              Building <span>purposeful</span>
+              <br />
+              <span class="accent">digital products</span> from idea
+              <br />
+              to impact
+            </h1>
+            <p class="hero-lead">
+              We are a student-led startup collective and product studio. We design
+              and build digital products from research to launch, starting lean and
+              scaling with purpose.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#">Explore Products</a>
+              <a class="btn ghost" href="#">Join the Journey</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="orb orb-three"></div>
+            <div class="square square-one"></div>
+            <div class="square square-two"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about" aria-labelledby="about-title" id="about">
+        <div class="about-shell">
+          <div class="about-copy">
+            <span class="pill">Who we are</span>
+            <h2 id="about-title">Student-Led Product Studio</h2>
+            <p>
+              EliTech CreaTives is where ambitious student founders come together to
+              build real-world digital solutions. We are not focused on a single
+              product, we build multiple products over time, each driven by research
+              and validated by real market needs.
+            </p>
+            <p>
+              Our approach is rooted in lean execution and long-term thinking. We
+              start with deep problem discovery, validate through documentation and
+              prototyping, then build MVPs that we iterate and scale with purpose.
+            </p>
+            <p>
+              We believe in learning by doing, building with intention, and creating
+              products that solve meaningful problems in emerging and global markets.
+            </p>
+          </div>
+          <div class="about-card" aria-hidden="true">
+            <div class="track">
+              <span class="node"></span>
+              <span class="node"></span>
+              <span class="node"></span>
+              <span class="node"></span>
+            </div>
+            <div class="track accent">
+              <span class="node"></span>
+              <span class="node"></span>
+              <span class="node"></span>
+              <span class="node"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="build" aria-labelledby="build-title">
+        <div class="build-shell">
+          <h2 id="build-title">What We Build</h2>
+          <div class="build-grid">
+            <article class="build-card">
+              <div class="icon">
+                <span class="material-icons" aria-hidden="true">cloud</span>
+              </div>
+              <h3>SaaS Platforms</h3>
+              <p>
+                Scalable cloud-based solutions designed to solve specific business
+                challenges with elegant user experiences.
+              </p>
+            </article>
+            <article class="build-card">
+              <div class="icon">
+                <span class="material-icons" aria-hidden="true">dashboard_customize</span>
+              </div>
+              <h3>Management Systems</h3>
+              <p>
+                Internal tools and dashboards that streamline operations, improve
+                workflows, and drive efficiency.
+              </p>
+            </article>
+            <article class="build-card">
+              <div class="icon">
+                <span class="material-icons" aria-hidden="true">account_balance</span>
+              </div>
+              <h3>Fintech Tools</h3>
+              <p>
+                Financial technology products that simplify transactions, payments,
+                and money management.
+              </p>
+            </article>
+            <article class="build-card">
+              <div class="icon">
+                <span class="material-icons" aria-hidden="true">rocket_launch</span>
+              </div>
+              <h3>Productivity Software</h3>
+              <p>
+                Applications that help teams and individuals work smarter, faster,
+                and more collaboratively.
+              </p>
+            </article>
+            <article class="build-card">
+              <div class="icon">
+                <span class="material-icons" aria-hidden="true">science</span>
+              </div>
+              <h3>Experimental Products</h3>
+              <p>
+                Early-stage innovations exploring new ideas, technologies, and
+                market opportunities.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="products" aria-labelledby="products-title" id="products">
+        <div class="products-shell">
+          <header class="section-title">
+            <h2 id="products-title">Our Products</h2>
+            <span class="section-line" aria-hidden="true"></span>
+          </header>
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/PLAT.jpg" alt="Platera - Coming Soon" class="product-image" />
+            </div>
+            <div class="product-content">
+              <span class="tag">Coming Soon</span>
+              <h3>Platera</h3>
+              <p>
+                A smart service and management platform designed to streamline
+                operations, enhance customer experiences, and drive business growth
+                through intelligent automation and data-driven insights.
+              </p>
+              <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">
+                We're working hard to bring this to you soon. Stay tuned for updates!
+              </p>
+            </div>
+          </div>
+          <div class="product-card reverse">
+            <div class="product-content">
+              <span class="tag muted">Coming Soon</span>
+              <h3>Veylo</h3>
+              <p>
+                A comprehensive leave and workforce management system that simplifies
+                employee scheduling, time-off requests, and team coordination. Built to
+                help organizations manage their workforce efficiently and transparently.
+              </p>
+              <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">
+                We're working hard to bring this to you soon. Stay tuned for updates!
+              </p>
+            </div>
+            <div class="product-media">
+              <img src="assets/veylo1.jpg" alt="Veylo - Coming Soon" class="product-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process" aria-labelledby="process-title" id="process">
+        <div class="process-shell">
+          <header class="section-title">
+            <h2 id="process-title">Our Process</h2>
+            <span class="section-line" aria-hidden="true"></span>
+          </header>
+          <div class="process-grid">
+            <div class="process-row right">
+              <article class="process-card">
+                <div class="step">01</div>
+                <div>
+                  <h3>Research &amp; Discovery</h3>
+                  <p>
+                    Deep dive into market needs, user pain points, and opportunity
+                    spaces through interviews, surveys, and competitive analysis.
+                  </p>
+                </div>
+                <span class="step-icon material-icons" aria-hidden="true">search</span>
+              </article>
+            </div>
+            <div class="process-row">
+              <article class="process-card">
+                <div class="step">02</div>
+                <div>
+                  <h3>Validation &amp; Documentation</h3>
+                  <p>
+                    Validate assumptions through user testing, create detailed
+                    specifications, and build a solid foundation for development.
+                  </p>
+                </div>
+                <span class="step-icon material-icons" aria-hidden="true">description</span>
+              </article>
+            </div>
+            <div class="process-row right">
+              <article class="process-card">
+                <div class="step">03</div>
+                <div>
+                  <h3>Design &amp; Prototyping</h3>
+                  <p>
+                    Craft intuitive user experiences, design beautiful interfaces, and
+                    create interactive prototypes for early feedback.
+                  </p>
+                </div>
+                <span class="step-icon material-icons" aria-hidden="true">draw</span>
+              </article>
+            </div>
+            <div class="process-row">
+              <article class="process-card">
+                <div class="step">04</div>
+                <div>
+                  <h3>Lean MVP Build</h3>
+                  <p>
+                    Develop a minimum viable product focused on core features,
+                    ensuring quality while maintaining speed to market.
+                  </p>
+                </div>
+                <span class="step-icon material-icons" aria-hidden="true">build</span>
+              </article>
+            </div>
+            <div class="process-row right">
+              <article class="process-card">
+                <div class="step">05</div>
+                <div>
+                  <h3>Iteration &amp; Growth</h3>
+                  <p>
+                    Launch, gather feedback, iterate rapidly, and scale features based
+                    on real user data and market response.
+                  </p>
+                </div>
+                <span class="step-icon material-icons" aria-hidden="true">trending_up</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="founders" aria-labelledby="founders-title" id="team">
+        <div class="founders-shell">
+          <header class="section-title">
+            <h2 id="founders-title">The Founders</h2>
+            <span class="section-line" aria-hidden="true"></span>
+          </header>
+          <div class="founders-grid">
+            <article class="founder-card">
+              <div class="founder-photo">
+                <img src="assets/eli.png" alt="Richard Elikem Amenorpe" />
+              </div>
+              <div class="founder-body">
+                <h3>Richard Elikem Amenorpe</h3>
+                <p class="role">Co-Founder &amp; Product Lead</p>
+                <p>
+                  Visionary product thinker with a passion for solving complex
+                  problems through elegant design and strategic execution. Leads
+                  product strategy, user research, and go-to-market initiatives.
+                </p>
+              </div>
+              <div class="founder-links" aria-hidden="true">
+                <a href="https://elitron-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Richard portfolio">Portfolio</a>
+                <a href="https://www.linkedin.com/in/richard-elikem-292107309/" target="_blank" rel="noopener noreferrer" aria-label="Richard LinkedIn">LinkedIn</a>
+              </div>
+            </article>
+            <article class="founder-card">
+              <div class="founder-photo alt">
+                <img src="assets/andy.png" alt="Andy Nkrumah" />
+              </div>
+              <div class="founder-body">
+                <h3>Andy Nkrumah</h3>
+                <p class="role">Co-Founder &amp; Engineering Lead</p>
+                <p>
+                  Technical architect and full-stack engineer who transforms ideas
+                  into scalable products. Drives technical decisions, system
+                  architecture, and engineering culture at EliTech CreaTives.
+                </p>
+              </div>
+              <div class="founder-links" aria-hidden="true">
+                <a href="#" aria-label="Andy portfolio">Portfolio</a>
+                <a href="https://www.linkedin.com/in/andy-nkrumah-939b3a322/" target="_blank" rel="noopener noreferrer" aria-label="Andy LinkedIn">LinkedIn</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="vision" aria-labelledby="vision-title">
+        <div class="vision-shell">
+          <h2 id="vision-title">
+            We are building <span>multiple impactful products</span> over time,
+            growing EliTech CreaTives into a <span class="accent">trusted</span>
+            product studio that solves real problems in emerging and global markets.
+          </h2>
+          <p>
+            Our vision is to create lasting value through thoughtful innovation, one
+            product at a time.
+          </p>
+        </div>
+      </section>
+      <section class="careers" aria-labelledby="careers-title" id="careers">
+        <div class="careers-shell">
+          <div class="careers-copy">
+            <h2 id="careers-title">Join Our Team</h2>
+            <p>
+              We are looking for passionate individuals who want to build real
+              products, learn by doing, and grow with a dynamic startup studio.
+            </p>
+            <ul>
+              <li>Flexible remote-first work environment</li>
+              <li>Real impact on product development</li>
+              <li>Continuous learning opportunities</li>
+              <li>Equity and growth potential</li>
+              <li>Collaborative startup culture</li>
+            </ul>
+          </div>
+          <form class="careers-form" action="https://formspree.io/f/xvzbvdpz" method="post" id="careers-form">
+            <label>
+              <span>Full Name</span>
+              <input type="text" name="fullName" placeholder="Full Name" />
+            </label>
+            <label>
+              <span>Email Address</span>
+              <input type="email" name="email" placeholder="Email Address" required />
+            </label>
+            <label>
+              <span>Phone Number</span>
+              <input type="tel" name="phone" placeholder="Phone Number" />
+            </label>
+            <label>
+              <span>Select Role Interest</span>
+              <select name="role" required>
+                <option value="">Select Role Interest</option>
+                <option value="ui-ux-designer">UI/UX Designer</option>
+                <option value="product-designer">Product Designer</option>
+                <option value="web-designer">Web Designer</option>
+                <option value="frontend-developer">Frontend Developer</option>
+                <option value="backend-developer">Backend Developer</option>
+                <option value="marketer">Marketer</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              <span>Why do you want to join EliTech CreaTives? (Max 500 characters)</span>
+              <textarea
+                name="reason"
+                rows="4"
+                maxlength="500"
+                placeholder="Why do you want to join EliTech CreaTives? (Max 500 characters)"
+              ></textarea>
+              <span class="char-count">0/500</span>
+            </label>
+            <label>
+              <span>Key Skills (comma separated)</span>
+              <input type="text" name="skills" placeholder="Key Skills (comma separated)" />
+            </label>
+            <label>
+              <span>Portfolio Link (optional)</span>
+              <input type="url" name="portfolio" placeholder="Portfolio Link (optional)" />
+            </label>
+            <label>
+              <span>LinkedIn or GitHub Profile</span>
+              <input type="url" name="social" placeholder="LinkedIn or GitHub Profile" />
+            </label>
+            <button class="btn primary" type="submit">Submit Application →</button>
+          </form>
+        </div>
+      </section>
+      <section class="connect" aria-labelledby="connect-title">
+        <div class="connect-shell">
+          <h2 id="connect-title">Stay Connected</h2>
+          <p>
+            Join our community to get updates on new products, features, and
+            opportunities to collaborate.
+          </p>
+          <form class="connect-form" action="https://formspree.io/f/xvzbvdpz" method="post">
+            <input type="email" name="email" placeholder="Enter your email" />
+            <button class="btn primary" type="submit">Join Waitlist</button>
+          </form>
+          <div class="connect-tags">
+            <span>Product Updates</span>
+            <span>Partnership</span>
+            <span>Newsletter</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-shell">
+        <div class="footer-brand">
+          <a class="brand" href="#">
+            <span class="brand-text">EliTech CreaTives</span>
+            <span class="brand-dot" aria-hidden="true"></span>
+          </a>
+          <p>
+            Building purposeful digital products from idea to impact. A student-led
+            startup collective and product studio.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Products</h3>
+            <a href="#products">Platera</a>
+            <a href="#products">Veylo</a>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 EliTech CreaTives. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy &amp; Terms</a>
+          <span>Powered by EliTech</span>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="form-modal" aria-hidden="true" role="dialog">
+      <div class="modal-content" role="document">
+        <h3 id="modal-title">Submission status</h3>
+        <p id="modal-message"></p>
+        <button class="btn ghost" type="button" id="modal-close">Close</button>
+      </div>
+    </div>
+    <script>
+      // Page Loader
+      const pageLoader = document.getElementById("page-loader");
+      const loaderSaying = document.getElementById("loader-saying");
+      const loaderProgressBar = document.getElementById("loader-progress-bar");
+      const loaderSkipBtn = document.getElementById("loader-skip");
+      const loaderArc = document.getElementById("loader-arc");
+
+      const techSayings = [
+        "Building the future, one byte at a time...",
+        "Turning ideas into innovations...",
+        "Code is poetry, design is magic...",
+        "Creating digital experiences that matter...",
+        "Where creativity meets technology...",
+        "Building products that inspire...",
+        "Designing tomorrow, today...",
+        "Innovation starts with a single idea...",
+        "Crafting solutions, not just software...",
+        "The best ideas become the best products...",
+      ];
+
+      let currentSayingIndex = 0;
+      let loaderAllowed = true;
+      let sayingInterval = null;
+      const totalLoaderTime = techSayings.length * 2000; // 20 seconds for all sayings
+
+      const rotateLoaderSayings = () => {
+        if (!loaderSaying) return;
+        
+        // Fade out current text
+        loaderSaying.style.opacity = "0";
+        
+        // After fade out, update text
+        setTimeout(() => {
+          loaderSaying.textContent = techSayings[currentSayingIndex];
+          currentSayingIndex++;
+          
+          // Fade in new text
+          loaderSaying.style.transition = "opacity 0.6s ease";
+          loaderSaying.style.opacity = "1";
+          
+          // Check if we've shown all sayings
+          if (currentSayingIndex >= techSayings.length) {
+            // Stop rotating and auto-hide after showing last saying
+            clearInterval(sayingInterval);
+            setTimeout(() => {
+              if (loaderAllowed) {
+                hidePageLoader();
+              }
+            }, 1800); // Wait for last saying to display before hiding
+          }
+        }, 300);
+      };
+
+      const hidePageLoader = () => {
+        loaderAllowed = false;
+        clearInterval(sayingInterval);
+        document.body.classList.remove("is-loading");
+        document.body.classList.add("is-ready");
+        if (pageLoader) {
+          pageLoader.classList.add("fade-out");
+          setTimeout(() => {
+            pageLoader.style.display = "none";
+          }, 600);
+        }
+        
+        // Remove event listeners after loader is hidden
+        document.removeEventListener("scroll", interruptLoader);
+        document.removeEventListener("click", interruptLoader);
+        document.removeEventListener("touchstart", interruptLoader);
+      };
+
+      const interruptLoader = () => {
+        if (loaderAllowed) {
+          hidePageLoader();
+        }
+      };
+
+      // Start rotating sayings
+      rotateLoaderSayings(); // Show first saying immediately
+      sayingInterval = setInterval(rotateLoaderSayings, 2000);
+
+      // Start progress bar animation
+      if (loaderProgressBar) {
+        loaderProgressBar.style.animation = `progress-fill ${totalLoaderTime}ms linear forwards`;
+      }
+
+      // Animate loader arc growth from small to full circle
+      if (loaderArc) {
+        const radius = 40;
+        const circumference = 2 * Math.PI * radius;
+        const minArc = circumference * 0.08;
+        const startTime = performance.now();
+
+        const animateArc = (now) => {
+          if (!loaderAllowed) return;
+          const progress = Math.min((now - startTime) / totalLoaderTime, 1);
+          const arcLength = minArc + (circumference - minArc) * progress;
+          loaderArc.style.strokeDasharray = `${arcLength} ${circumference}`;
+
+          if (progress < 1) {
+            requestAnimationFrame(animateArc);
+          }
+        };
+
+        requestAnimationFrame(animateArc);
+      }
+
+      // Skip button functionality
+      loaderSkipBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        hidePageLoader();
+      });
+
+      // Allow user to interrupt with scroll, click, or touch
+      document.addEventListener("scroll", interruptLoader, { passive: true });
+      document.addEventListener("click", interruptLoader);
+      document.addEventListener("touchstart", interruptLoader, { passive: true });
+
+      const header = document.querySelector(".site-header");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileLinks = document.querySelectorAll(".mobile-nav a");
+      const form = document.getElementById("careers-form");
+      const modal = document.getElementById("form-modal");
+      const modalTitle = document.getElementById("modal-title");
+      const modalMessage = document.getElementById("modal-message");
+      const modalClose = document.getElementById("modal-close");
+
+      const toggleHeader = () => {
+        if (!header) return;
+        header.classList.toggle("scrolled", window.scrollY > 10);
+      };
+
+      const toggleMenu = () => {
+        if (!header || !menuToggle) return;
+        const isOpen = header.classList.toggle("menu-open");
+        menuToggle.classList.toggle("is-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      };
+
+      const closeMenu = () => {
+        if (!header || !menuToggle) return;
+        header.classList.remove("menu-open");
+        menuToggle.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      };
+
+      const openModal = (title, message) => {
+        if (!modal || !modalTitle || !modalMessage) return;
+        modalTitle.textContent = title;
+        modalMessage.textContent = message;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      };
+
+      const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      };
+
+      toggleHeader();
+      window.addEventListener("scroll", toggleHeader, { passive: true });
+      menuToggle?.addEventListener("click", toggleMenu);
+      mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+      modalClose?.addEventListener("click", closeModal);
+      modal?.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+
+      const liquidSections = document.querySelectorAll("main > section");
+      if (liquidSections.length) {
+        const liquidObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("liquid-active");
+              } else {
+                entry.target.classList.remove("liquid-active");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        liquidSections.forEach((section) => liquidObserver.observe(section));
+      }
+
+      form?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const action = form.getAttribute("action") || "";
+
+        if (!action || action === "#") {
+          openModal(
+            "Form not connected",
+            "Add your Formspree action URL to submit this form."
+          );
+          return;
+        }
+
+        try {
+          const response = await fetch(action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            form.reset();
+            openModal("Submitted", "Thanks for applying. We will reach out soon.");
+          } else {
+            openModal("Submission failed", "Please try again or contact the team.");
+          }
+        } catch (error) {
+          openModal("Submission failed", "Please check your connection and retry.");
+        }
+      });
+    </script>
+  </body>
+</html>

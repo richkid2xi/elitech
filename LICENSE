@@ -1,0 +1,70 @@
+MIT License
+
+Copyright (c) 2026 EliTech CreaTives - Richard Elikem Amenorpe & Andy Nkrumah
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+THIRD-PARTY CREDITS
+===================
+
+This project uses the following open-source resources:
+
+1. Google Fonts
+   - Font: Manrope, Space Grotesk
+   - License: Open Font License (OFL)
+   - URL: https://fonts.google.com
+
+2. Google Material Icons
+   - Icons: Material Design Icons System
+   - License: Apache 2.0
+   - URL: https://fonts.google.com/icons
+
+3. Formspree
+   - Form handling service (free tier)
+   - License: Formspree Terms of Service
+   - URL: https://formspree.io
+
+All third-party licenses are compatible with this project's MIT License.
+
+---
+
+USAGE TERMS
+===========
+
+You are free to:
+- ✅ Use this website for commercial purposes
+- ✅ Modify and customize the code
+- ✅ Distribute copies of the software
+- ✅ Private use and internal applications
+
+You must:
+- ✅ Include the license and copyright notice
+- ✅ Document changes made to the code
+
+You cannot:
+- ❌ Hold the authors liable for any damages
+- ❌ Claim warranty or guarantee of fitness
+- ❌ Remove or alter license notices
+
+---
+
+For more information about the MIT License, visit:
+https://opensource.org/licenses/MIT
