@@ -86,13 +86,14 @@ textarea {
   inset: -30% -20% -30% -20%;
   background: radial-gradient(60% 60% at 30% 30%, rgba(246, 162, 0, 0.18), transparent 60%),
     radial-gradient(70% 70% at 70% 60%, rgba(95, 120, 214, 0.2), transparent 65%);
-  opacity: 0.35;
+  opacity: 0.2;
   transform: translateY(10%) scale(0.96);
-  filter: blur(8px);
+  filter: blur(6px);
   pointer-events: none;
   z-index: 0;
-  animation: liquid-flow 7s ease-in-out infinite;
+  animation: liquid-flow 12s ease-in-out infinite;
   will-change: transform;
+  display: block;
 }
 
 .page-loader::after {
@@ -458,21 +459,6 @@ textarea {
   gap: 6px;
   padding: 10px 10px;
   flex-direction: column;
-@media (max-width: 860px) {
-  .connect-form {
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .connect-form input {
-    min-width: 0;
-  }
-
-  .connect-form button {
-    padding: 10px 16px;
-    min-width: 120px;
-    white-space: nowrap;
-  }
-}
   align-items: center;
   justify-content: center;
   transition: background 0.2s ease, border 0.2s ease;
@@ -1347,6 +1333,7 @@ main > section::after {
   transition: opacity 0.5s ease;
   z-index: 0;
   will-change: transform;
+  display: block;
 }
 
 main > section::after {
@@ -1357,13 +1344,13 @@ main > section::after {
 
 main > section.liquid-active::before,
 main > section.liquid-active::after {
-  opacity: 0.3;
-  animation: liquid-flow 3.5s ease-in-out 1;
+  opacity: 0.2;
+  animation: liquid-flow 6s ease-in-out 1;
 }
 
 main > section.liquid-active::after {
-  animation-duration: 4.5s;
-  animation-delay: -0.6s;
+  animation-duration: 8s;
+  animation-delay: -1s;
 }
 
 @keyframes liquid-flow {
