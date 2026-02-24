@@ -9,8 +9,9 @@
     <meta property="og:title" content="EliTech CreaTives" />
     <meta property="og:description" content="Student-led product studio building purposeful digital products from idea to impact." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <meta property="og:url" content="https://elitech-creatives.netlify.app/" />
+    <meta name="google-site-verification" content="Rs9_loq875POqyEMSA74CSjHJszjHs8ZjYEKTbuzaOY" />
+    <meta property="og:image" content="https://elitech-creatives.netlify.app/assets/EliTech.png" />    
     <link rel="icon" type="image/png" href="assets/EliTech.png" />
     <title>Elitech Creatives</title>
     <link
@@ -692,14 +693,22 @@
 
       const liquidSections = document.querySelectorAll("main > section");
       if (liquidSections.length) {
+        const liquidTimers = new WeakMap();
         const liquidObserver = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("liquid-active");
-              } else {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("liquid-active");
+
+              const existingTimer = liquidTimers.get(entry.target);
+              if (existingTimer) clearTimeout(existingTimer);
+
+              const timer = setTimeout(() => {
                 entry.target.classList.remove("liquid-active");
-              }
+                liquidTimers.delete(entry.target);
+              }, 4500);
+
+              liquidTimers.set(entry.target, timer);
             });
           },
           { threshold: 0.2 }
