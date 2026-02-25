@@ -2,7 +2,7 @@
 
 A modern, fully responsive marketing website for EliTech CreaTives, a student-led product studio building purposeful digital products from idea to impact.
 
-Live demo: https://elitech-creatives.vercel.app
+Live demo: https://elitech-creatives.netlify.app/
 
 ---
 
