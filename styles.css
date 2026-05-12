@@ -91,14 +91,15 @@ textarea {
   filter: blur(18px);
   pointer-events: none;
   z-index: 0;
-  animation: liquid-flow 7s ease-in-out infinite;
+  animation: liquid-flow 10s ease-in-out infinite;
+  will-change: transform;
 }
 
 .page-loader::after {
   background: radial-gradient(55% 55% at 70% 25%, rgba(246, 162, 0, 0.16), transparent 60%),
     radial-gradient(65% 65% at 20% 75%, rgba(95, 120, 214, 0.18), transparent 65%);
   transform: translateY(-8%) scale(1.02);
-  animation-duration: 9s;
+  animation-duration: 12s;
   animation-delay: -2s;
 }
 
@@ -146,18 +147,6 @@ textarea {
   height: 60px;
 }
 
-.spinner-svg {
-  width: 100%;
-  height: 100%;
-  animation: rotate-spinner 3s linear infinite;
-  filter: drop-shadow(0 0 12px rgba(246, 162, 0, 0.5));
-}
-
-.loader-arc {
-  animation: gradient-cycle 4s ease-in-out infinite, stroke-pulse 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px rgba(95, 120, 214, 0.4));
-}
-
 @keyframes rotate-spinner {
   from {
     transform: rotate(0deg);
@@ -165,6 +154,14 @@ textarea {
   to {
     transform: rotate(360deg);
   }
+}
+
+.spinner-svg {
+  width: 100%;
+  height: 100%;
+  animation: rotate-spinner 3s linear infinite;
+  filter: drop-shadow(0 0 12px rgba(246, 162, 0, 0.4));
+  will-change: transform;
 }
 
 @keyframes gradient-cycle {
@@ -290,7 +287,7 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 999px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
   font-weight: 500;
 }
 
@@ -321,10 +318,11 @@ textarea {
 }
 
 .site-header.scrolled {
-  background: rgba(10, 14, 20, 0.45);
+  background: rgba(10, 14, 20, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(16px);
-  box-shadow: 0 12px 30px rgba(5, 8, 12, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .nav-shell {
@@ -661,7 +659,7 @@ textarea {
   background: var(--accent);
   color: #111114;
   box-shadow: 0 12px 26px rgba(246, 162, 0, 0.25);
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1), box-shadow 0.3s cubic-bezier(0.23, 1, 0.320, 1), background 0.3s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .btn.primary:hover {
@@ -677,7 +675,7 @@ textarea {
   border: 1px solid rgba(246, 162, 0, 0.6);
   color: var(--text-main);
   background: rgba(9, 11, 15, 0.2);
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.320, 1), background 0.3s cubic-bezier(0.23, 1, 0.320, 1), box-shadow 0.3s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .btn.ghost:hover {
@@ -711,9 +709,11 @@ textarea {
   position: absolute;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05);
   animation: float 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .orb-one {
@@ -1353,31 +1353,72 @@ main > section::after {
   transform: translateY(-8%) scale(1.02);
 }
 
+@media (max-width: 768px) {
+  main > section::before,
+  main > section::after {
+    filter: blur(12px); /* Lower blur for mobile performance */
+    inset: -15% -10% -15% -10%; /* Smaller area */
+  }
+  
+  main > section::after {
+    display: none; /* Only one layer on mobile for performance */
+  }
+}
+
 main > section.liquid-active::before,
 main > section.liquid-active::after {
   opacity: 0.6;
-  animation: liquid-flow 7s ease-in-out infinite;
+  animation: liquid-flow 10s ease-in-out infinite;
+  will-change: transform;
 }
 
 main > section.liquid-active::after {
-  animation-duration: 9s;
+  animation-duration: 12s;
   animation-delay: -2s;
 }
 
 @keyframes liquid-flow {
   0% {
     transform: translateY(8%) translateX(-4%) scale(0.96);
-    background-position: 0% 0%, 100% 100%;
   }
   50% {
     transform: translateY(-6%) translateX(6%) scale(1.02);
-    background-position: 80% 20%, 20% 80%;
   }
   100% {
     transform: translateY(8%) translateX(-4%) scale(0.96);
-    background-position: 0% 0%, 100% 100%;
   }
 }
+
+/* Scroll Reveal Base Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  transform: translateX(-30px);
+}
+
+.reveal-right {
+  transform: translateX(30px);
+}
+
+.reveal-scale {
+  transform: scale(0.9);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
 
 main > section:nth-of-type(1) {
   animation-delay: 0.05s;
