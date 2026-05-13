@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Directories
+Disallow: /assets/
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.svg
+
+# Files
+Sitemap: https://elitechcreatives.com/sitemap.xml

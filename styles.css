@@ -1138,6 +1138,62 @@ textarea {
   line-height: 1.6;
 }
 
+.product-status {
+  margin-top: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.product-actions {
+  margin-top: 1.5rem;
+}
+
+.project-btn {
+  background: var(--text-main);
+  color: #05070a;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1), box-shadow 0.3s cubic-bezier(0.23, 1, 0.320, 1), background 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.project-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: #ffffff;
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.15);
+}
+
+.redirect-loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.redirect-loader.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.redirect-loader p {
+  margin-top: 1.5rem;
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
 .product-content ul {
   list-style: none;
   display: grid;
@@ -1519,7 +1575,7 @@ main > section:nth-of-type(8) {
 
 .founders-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px;
 }
 
@@ -1586,7 +1642,7 @@ main > section:nth-of-type(8) {
 
 .founder-photo {
   background: linear-gradient(135deg, rgba(12, 45, 76, 0.9), rgba(12, 18, 28, 0.9));
-  min-height: 260px;
+  aspect-ratio: 4 / 5;
   display: grid;
   place-items: center;
   overflow: hidden;

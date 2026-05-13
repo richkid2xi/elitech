@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://elitechcreatives.com/</loc>
+    <lastmod>2025-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://elitechcreatives.com/assets/EliTech.png</image:loc>
+      <image:title>EliTech CreaTives Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://elitechcreatives.com/assets/Eli_eli.jpeg</image:loc>
+      <image:title>Richard Elikem Amenorpe - Founder</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://elitechcreatives.com/assets/TOG_ELI.png</image:loc>
+      <image:title>Andy Nkrumah - Project Manager</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://elitechcreatives.com/assets/Bright_Eli.png</image:loc>
+      <image:title>Bright Akoto - Front End Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://elitechcreatives.com/assets/klavora.jpg</image:loc>
+      <image:title>Klavora Healthcare SaaS Platform</image:title>
+    </image:image>
+  </url>
+</urlset>
