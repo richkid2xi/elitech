@@ -25,19 +25,19 @@ const totalLoaderTime = techSayings.length * 2000; // 20 seconds for all sayings
 
 const rotateLoaderSayings = () => {
   if (!loaderSaying) return;
-  
+
   // Fade out current text
   loaderSaying.style.opacity = "0";
-  
+
   // After fade out, update text
   setTimeout(() => {
     loaderSaying.textContent = techSayings[currentSayingIndex];
     currentSayingIndex++;
-    
+
     // Fade in new text
     loaderSaying.style.transition = "opacity 0.6s ease";
     loaderSaying.style.opacity = "1";
-    
+
     // Check if we've shown all sayings
     if (currentSayingIndex >= techSayings.length) {
       // Stop rotating and auto-hide after showing last saying
@@ -62,7 +62,7 @@ const hidePageLoader = () => {
       pageLoader.style.display = "none";
     }, 600);
   }
-  
+
   // Remove event listeners after loader is hidden
   document.removeEventListener("scroll", interruptLoader);
   document.removeEventListener("click", interruptLoader);
@@ -243,14 +243,14 @@ projectButtons.forEach(button => {
     const url = button.getAttribute("href");
     if (url && url !== "#") {
       e.preventDefault();
-      
+
       // Show loader
       redirectLoader.classList.add("active");
-      
+
       // Wait for animation then redirect
       setTimeout(() => {
         window.open(url, "_blank", "noopener,noreferrer");
-        
+
         // Hide loader after a bit so it's gone when user returns
         setTimeout(() => {
           redirectLoader.classList.remove("active");
